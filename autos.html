@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad 3</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <style type="text/css">
+		  #container mt-2{
+			  container mt-2
+		  }
+		#contenido {
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+			background-color: #FFFFFF;
+			position: absolute;
+			height: 857px;
+			width: 1100px;
+			left: 20px;
+			top: 215px;
+			border-radius: 30px;
+		}
+	  	#galeria1 {
+			margin: auto;
+			height: 100px;
+			width: 600px;
+			border-style: solid;
+			position: absolute;
+			top: 30px;
+			left: 250px;
+		}
+
+		#galeria2 {
+			height: 400px;
+			width: 600px;
+			margin-top: 0px;
+			margin-right: auto;
+			margin-bottom: auto;
+			margin-left: auto;
+			border: 1px solid #000000;
+			position: absolute;
+			top: 135px;
+			left: 250px;
+		}
+		#car1 {
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+			height: 400px;
+			width: 600px;
+			border: 1px solid #000000;
+			position: absolute;
+			visibility: hidden;
+		}
+		#car2 {
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+			height: 400px;
+			width: 600px;
+			border: 1px solid #000000;
+			position: absolute;
+			visibility: hidden;
+		}
+		#car3 {
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+			height: 400px;
+			width: 600px;
+			border: 1px solid #000000;
+			position: absolute;
+			visibility: hidden;
+		}
+		#car4{
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+			height: 400px;
+			width: 600px;
+			border: 1px solid #000000;
+			position: absolute;
+			visibility: hidden;
+		}
+
+	  </style>
+	  
+	  
+	  <script type="text/javascript">
+		function MM_showHideLayers() { //v9.0
+		  var i,p,v,obj,args=MM_showHideLayers.arguments;
+		  for (i=0; i<(args.length-2); i+=3) 
+		  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+			if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+			obj.visibility=v; }
+		}
+	  </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">RentCars</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="autos.html">Autos</a>
+			</li>
+		  <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="mantenimiento.html">Mantenimiento</a>
+              <a class="dropdown-item" href="montallantas.html">Montallantas</a>
+              <a class="dropdown-item" href="alineacion.html">Alineación y balanceo</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">Autos disponibles</h1>
+            <div class="row justify-content-center">
+              
+            </div>
+            <p class="text-center">En nuestra compañia siempre queremos ofrecerte lo mejor.</p>
+            <div id="contenido">
+			  <div id="galeria1" onClick="MM_showHideLayers('car1','','show')" onMouseOver="MM_showHideLayers('car1','','show')">
+				<img src="imagenes/car1.png" alt="" width="140" height="100" onMouseOver="MM_showHideLayers('car1','','show')" onMouseOut="MM_showHideLayers('car1','','hide')"/> 
+				<img src="imagenes/car2.png" alt="" width="140" height="100" onMouseOver="MM_showHideLayers('car2','','show')" onMouseOut="MM_showHideLayers('car2','','hide')"/>
+				<img src="imagenes/car3.png" alt="" width="140" height="100" onMouseOver="MM_showHideLayers('car3','','show')" onMouseOut="MM_showHideLayers('car3','','hide')"/> 
+				<img src="imagenes/car4.png" alt="" width="140" height="100" onMouseOver="MM_showHideLayers('car4','','show')" onMouseOut="MM_showHideLayers('car4','','hide')"/> 
+				</div>
+			<div id="galeria2">
+				<div id="car1">
+					<img src="imagenes/car1.png" width="600" height="380" alt=""/>
+				</div>
+			  <div id="car2">
+					<img src="imagenes/car2.png" width="600" height="380" alt=""/>
+				</div>
+			  <div id="car3">
+					<img src="imagenes/car3.png" width="600" height="380" alt=""/>
+				</div>
+				<div id="car4">
+					<img src="imagenes/car4.png" width="600" height="380" alt=""/>
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
